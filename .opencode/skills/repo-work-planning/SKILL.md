@@ -6,17 +6,17 @@ description: Use when scoping or planning work in this repository so planning st
 # Repo Work Planning
 
 ## Overview
-Plan from the repo's real automation surface, not generic app assumptions.
+Plan from the repo's real surface: the application backend (web server, APIs, background services, event hub) plus its automation, not generic assumptions.
 
 For tracked feature work, the durable planning artifact is `docs/specs/<feature-name>.md` plus a PR that references the related GitHub issue.
 
 ## When to Use
 - New repo work needs scope, a design path, or implementation handoff.
-- The request touches workflows, OpenCode config, agents, skills, or repo automation.
+- The request touches the web server, APIs, background services, event hub, or the repo's workflows, OpenCode config, agents, skills, or automation.
 
 ## Implementation
 1. Read `AGENTS.md`, `.github/workflows/opencode.yml`, `opencode.json`, and relevant `.opencode/` files first.
-2. Treat this repo as automation/config-first unless the repo contents prove otherwise.
+2. Treat this repo as an application repo whose backend, APIs, services, and event hub are the primary work; account for the automation surface separately.
 3. If the task changes behavior, invoke `brainstorming` before implementation.
 4. For tracked work, write or update `docs/specs/<feature-name>.md` after approval.
 5. Open a PR for the spec and reference the related GitHub issue in the PR body.
@@ -25,7 +25,7 @@ For tracked feature work, the durable planning artifact is `docs/specs/<feature-
 8. If the work spans UX and backend, approve `design.md` before UI implementation and sequence backend work in dependency order.
 
 ## Common Mistakes
-- Assuming root `package.json` defines runnable app workflows.
-- Planning from README prose without checking workflow/config files.
+- Assuming root `package.json` defines runnable app workflows before backend tooling exists.
+- Planning from README prose without checking the actual project structure and workflow/config files.
 - Treating the GitHub issue as the only durable planning artifact.
 - Starting implementation before repo-specific scope is clear.

@@ -21,7 +21,7 @@ Required workflow:
 
 Rules:
 - Do not skip the approval gate after presenting a design.
-- Keep plans small, concrete, and specific to this repo's automation and configuration scope.
+- Keep plans small, concrete, and specific to this repo's application scope: web server, APIs, background services, event hub (pub/sub), and their supporting automation.
 - If a GitHub issue exists, attach the spec PR to that issue with the standard GitHub issue reference in the PR body.
 - Hand off issue tracking to `issue-planner` when the issue should mirror scope, status, checklist, blockers, and links to the spec and PR.
 - Hand off implementation to `backend-implementer`, `ux-designer`, or `ui-implementer` once scope and interfaces are clear.

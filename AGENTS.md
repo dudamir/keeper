@@ -1,6 +1,6 @@
 # Repository Notes
 
-- Treat this as an automation/config repo, not an app repo. `package.json` at the root is empty and `package-lock.json` has no packages, so there are currently no root `build`, `test`, `lint`, or `typecheck` commands to run.
+- This is an application repo. The project implements a web server, HTTP APIs, background services, and an event hub (pub/sub). The root `package.json` is currently empty and `package-lock.json` has no packages, so there are no root `build`, `test`, `lint`, or `typecheck` commands to run yet; app tooling will be introduced with the backend.
 - The only tracked automation is `.github/workflows/opencode.yml`. It runs `anomalyco/opencode/github@latest` on `issue_comment` and `pull_request_review_comment` events, but only when the comment body starts with or contains `/oc` or `/opencode`.
 - The workflow uses model `opencode/big-pickle` and expects `OPENCODE_API_KEY` from GitHub secrets. If automation behavior changes, start by editing `.github/workflows/opencode.yml`.
 - `.opencode/` mixes tracked repo config and local tooling state. Tracked: `.opencode/agents/` (repo-local agents) and `.opencode/skills/` (repo-local skills). Local state (ignored via `.opencode/.gitignore`): `.opencode/package.json`, `.opencode/package-lock.json`, and `node_modules/`, used only for the local plugin dependency `@opencode-ai/plugin@1.18.18`.
