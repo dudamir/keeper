@@ -7,3 +7,4 @@
 - Use `npm --prefix .opencode install` if the local plugin environment needs to be recreated or refreshed.
 - Repo-local agents: `product-owner`, `issue-planner`, `backend-implementer`, `ux-designer`, `ui-implementer`, `code-reviewer`. Repo-local skills: `repo-work-planning`, `github-issue-plan-sync`, `repo-automation-implementation`, `repo-ux-to-ui-handoff`, `repo-review-gate`.
 - Tracked feature planning uses `docs/specs/<feature-name>.md` plus a PR referencing the related GitHub issue. The product-owner owns the spec and application documentation; `issue-planner` keeps the GitHub issue aligned with the spec, PR, and actual state.
+- Every change to this repository must be associated with a GitHub issue. The issue is the anchor for scope: create one when none exists and reference it in every PR (e.g., `Refs #N` or `Closes #N`).

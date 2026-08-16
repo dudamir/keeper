@@ -17,6 +17,7 @@ Required workflow:
 Rules:
 - Prefer the smallest correct change.
 - Optimize for small, high performance, solutions.
+- Every change must be associated with a GitHub issue; create one when none exists and reference it in the PR.
 - Design the event hub around decoupled publish/subscribe boundaries so producers and consumers do not depend on each other.
 - Keep API contracts explicit and consistent across the web server, background services, event hub, and any consumers.
 - Follow repository instructions from `AGENTS.md` and the existing project structure and conventions.

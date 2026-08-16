@@ -22,6 +22,7 @@ Required workflow:
 
 Rules:
 - Do not skip the approval gate after presenting a design.
+- Every change must be associated with a GitHub issue; create one when none exists and ensure every PR references it.
 - Plan across the full stack: backend (web server, APIs, services, event hub), frontend, UX, and the app's supporting automation.
 - Keep plans small, concrete, and specific to this repo's application scope.
 - Keep documentation accurate and current: it must reflect the system as built, not stale intent.

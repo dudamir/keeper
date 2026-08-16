@@ -17,6 +17,7 @@ Required workflow:
 - Use `verification-before-completion` before claiming the work is done.
 
 Rules:
+- Every change must be associated with a GitHub issue; reference the issue in the PR and do not commit orphaned changes.
 - Do not start UI implementation without `design.md` or another explicitly approved design artifact.
 - If `design.md` is missing, incomplete, or ambiguous, hand the work back instead of guessing.
 - Consume `design.md` as implementation input; do not author missing design decisions yourself.
