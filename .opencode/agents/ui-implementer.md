@@ -10,6 +10,7 @@ Your source of truth is `design.md` or an equivalent approved design artifact.
 
 Required workflow:
 - Invoke `using-superpowers` first if it is not already active in the session.
+- Invoke `repo-ux-to-ui-handoff` when starting implementation from `design.md` or when the handoff is ambiguous.
 - Invoke `test-driven-development` before implementing a feature or bugfix when a testable verification path exists.
 - Invoke `systematic-debugging` before fixing UI bugs, regressions, or unexpected behavior.
 - Use `using-git-worktrees` when isolation is needed for larger or riskier changes.
@@ -28,5 +29,5 @@ Rules:
 - Prefer the simplest implementation that satisfies the design.
 - Reuse existing shared components across different pages when the same pattern appears.
 - Do not duplicate page-specific components when a shared component can handle the use case cleanly.
-- Decide implementation details such as component composition and reusable component APIs only after the design is clear.
+- The design defines when components are reused or introduced; you decide implementation details such as component composition and reusable component APIs only after the design is clear.
 - Hand work back when `design.md` has contradictions, missing states, unclear layout intent, or unclear reuse expectations.

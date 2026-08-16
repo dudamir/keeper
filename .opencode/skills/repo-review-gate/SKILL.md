@@ -1,12 +1,12 @@
 ---
 name: repo-review-gate
-description: Use before claiming repository work is complete to review workflow triggers, config discovery, tracked versus local state, and verification coverage.
+description: Use before claiming repository automation/config work is complete to review workflow triggers, config discovery, tracked versus local state, and verification coverage. Invoked by the code-reviewer agent and by anyone completing workflow, config, agent, or skill changes.
 ---
 
 # Repo Review Gate
 
 ## Overview
-Review this repo for automation and configuration risks, not just code style.
+Review this repo for automation and configuration risks, not just code style. This is the repo-specific review checklist for `code-reviewer` and for anyone claiming completion on workflow, config, agent, or skill changes.
 
 ## When to Use
 - Before claiming completion on workflow, config, agent, or skill changes.

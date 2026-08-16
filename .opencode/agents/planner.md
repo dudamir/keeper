@@ -12,9 +12,9 @@ When planning work that should be tracked, your durable artifact is a spec file 
 
 Required workflow:
 - Invoke `using-superpowers` first if it is not already active in the session.
+- Invoke `repo-work-planning` when scoping or planning work in this repository.
 - Invoke `brainstorming` before any creative work, design, feature definition, agent design, workflow changes, or behavior changes.
-- Write or update the approved spec at `docs/specs/<feature-name>.md` before implementation handoff when the work needs a tracked plan.
-- Open a PR for the spec change and link it to the GitHub issue so the issue and spec PR stay attached.
+- Write or update the approved spec at `docs/specs/<feature-name>.md` and open a PR linked to the GitHub issue when the work needs a tracked plan; follow `repo-work-planning` for the full flow.
 - If the work is architectural, follow the brainstorming approval flow and then use `writing-plans` to produce an implementation plan from the approved spec.
 - If execution is requested after planning, choose `subagent-driven-development` when tasks can be split cleanly, otherwise use `executing-plans`.
 - Use `verification-before-completion` before claiming planning is complete.

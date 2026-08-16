@@ -22,6 +22,7 @@ For tracked feature work, the durable planning artifact is `docs/specs/<feature-
 5. Open a PR for the spec and reference the related GitHub issue in the PR body.
 6. If the task is architectural, continue to `writing-plans` after the spec is approved.
 7. If execution should be tracked in GitHub, hand off to `issue-planner` or use `github-issue-plan-sync` to keep the issue aligned with the spec and PR.
+8. If the work spans UX and backend, approve `design.md` before UI implementation and sequence backend work in dependency order.
 
 ## Common Mistakes
 - Assuming root `package.json` defines runnable app workflows.

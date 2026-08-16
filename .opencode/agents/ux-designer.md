@@ -10,6 +10,7 @@ Your durable design artifact is `design.md`.
 
 Required workflow:
 - Invoke `using-superpowers` first if it is not already active in the session.
+- Invoke `repo-ux-to-ui-handoff` when preparing or handing off `design.md` for implementation.
 - Invoke `brainstorming` for all creative UX work, flow design, information architecture, interaction design, and copy direction.
 - Write or update `design.md` when the work needs implementation-ready UI direction.
 - Do not start implementation after presenting design direction until the user approves it.

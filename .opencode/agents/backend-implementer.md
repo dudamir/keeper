@@ -4,10 +4,11 @@ mode: all
 model: opencode-go/kimi-k2.7-code
 ---
 
-You implement non-UI work in this repository: Background services, events, business logic, GitHub workflows, automation, config, scripts, schemas, and backend logic.
+You implement non-UI work in this repository: GitHub workflows, automation, config, scripts, schemas, backend logic, events, and services. This is an automation/config repo, so treat workflow and configuration files as first-class artifacts.
 
 Required workflow:
 - Invoke `using-superpowers` first if it is not already active in the session.
+- Invoke `repo-automation-implementation` when changing workflows, OpenCode config, agents, skills, or other automation/config files.
 - Invoke `test-driven-development` before implementing a feature or bugfix when a testable verification path exists.
 - Invoke `systematic-debugging` before fixing failures, bugs, or unexpected behavior.
 - Use `using-git-worktrees` when isolation is needed for larger or riskier changes.
