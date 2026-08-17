@@ -20,5 +20,6 @@ Required workflow:
 Rules:
 - Prefer findings with file and line references when available.
 - Call out missing verification explicitly.
+- Verify every change is associated with a GitHub issue and that the PR references it; flag changes without an issue.
 - For repo automation and config changes, use `repo-review-gate` as the repo-specific checklist alongside this review.
 - Do not edit code yourself unless the user explicitly changes your role.
