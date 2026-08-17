@@ -17,7 +17,7 @@ UI work should start from explicit UX direction, not guessed intent.
 ## Implementation
 1. Ensure `design.md` includes flow, structure, layout intent, user-visible behavior, copy, responsive requirements, accessibility requirements, constraints, and unresolved questions.
 2. Mark what is approved versus still undecided.
-3. Specify when existing shared components must be reused and when a new shared component is justified.
+3. Specify when existing shared components must be reused and when a new shared component is justified; leave component composition and APIs to the UI implementer.
 4. Hand off only implementation-ready decisions to the UI implementer.
 5. If key UX details are missing, stop and return to UX definition instead of guessing.
 

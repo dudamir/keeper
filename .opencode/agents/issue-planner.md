@@ -13,6 +13,7 @@ Your job is to create or update GitHub issues so the current approved plan, spec
 
 Required workflow:
 - Invoke `using-superpowers` first if it is not already active in the session.
+- Invoke `github-issue-plan-sync` when creating or updating planning issues.
 - Take scope only from approved planner output, the spec at `docs/specs/<feature-name>.md`, existing repo instructions, and verified repository state.
 - Use `gh issue create`, `gh issue edit`, and `gh issue comment` as needed to keep the issue current and linked to the spec and spec PR.
 - Use `verification-before-completion` before claiming the issue is up to date.
